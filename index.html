@@ -1,40 +1,110 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <title>Hello world</title>
-    <meta name="Hello" content="This is my first html web page" />
-    <meta http-equiv="content-type" />
-    <link rel="stylesheet" href="clock.css" />
-  </head>
-  <body>
-    <h1>HTML Formatting Elements</h1>
-    <hr />
-    <p><b>This text is bold</b></p>
-    <p><strong>This text is important!</strong></p>
-    <p><i>This text is italic</i></p>
-    <p><em>This text is emphasized</em></p>
-    <small>This is some smaller text.</small>
-    <p>Do not forget to buy <mark>milk</mark> today.</p>
-    <p>My favorite color is <del>blue</del> red.</p>
-    <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
-    <p>This is <sub>subscripted</sub> text.</p>
-    <p>H<sub>2</sub>O.</p>
-    <p>This is <sup>superscripted</sup> text.</p>
-    <p>x<sup>2</sup></p>
-    <h1>Unordered HTML List</h1>
-    <hr />
-    <ul>
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ul>
-    <ol>
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ol>
-    <div id="clock">8:10:45</div>
-    <script src="clock.js"></script>
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="node_modules/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+    <script src="node_modules/glightbox/dist/js/glightbox.min.js"></script>
+    </head>
+
+<body>
+    <nav class="navbar navbar-expand-lg menu navbar-dark shadow fixed-top ">
+        <div class="container">
+            <a class="navbar-brand" href="">My Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navBarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navBarNav">
+                <ul class=" navbar-nav navbar-expand-sm ">
+                    <li class=" nav-item ">
+                        <a class=" nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link  " href="#">Servicess</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Get Started</a>
+                    </li>
+                </ul>
+                <button type="button" class="rounded-pill btn-rounded ">+0000000
+                    <span><i class="fas fa-phone-alt "></i></span>
+                </button>
+                </div>
+                </div>
+                </nav>
+                
+                <section id="home" class="intro-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6 intros">
+                                <h1 class="display-2">
+                                    <span class="display-2--intro">Hello</span>
+                                    <span class="display-2--description lh-base">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                        elit.
+                                        Tempora eos
+                                        soluta, quo vitae ipsa saepe? Modi voluptas magnam harum dignissimos at sequi perspiciatis sed?
+                                        Eos numquam ex nam sequi aliquam!</span>
+                                    <button type="button" class="rounded-pill btn-rounded2 ">Get In Touch
+                
+                                    </button>
+                                </h1>
+                            </div>
+                            <div class="col-md-6 intros text-end">
+                                <div class="video-box">
+                                    <img src="assets/images/coding-5-61.png" alt="video illus" class="img-fluid">
+                                    <a href="#" class=" glightbox position-absolute top-50 start-50 translate-middle">
+                                        <span>
+                                            <i class="fas fa-play-circle"></i>
+                                        </span>
+                                        <span class="border-animation border-animation--border-1"></span>
+                                        <span class="border-animation border-animation--border2"></span>
+                                        <a href="https://www.youtube.com/watch?v=SycDH3NSJUU" class="glightbox2">
+                                            <img src="small.jpg" alt="image" />
+                                        </a>
+                
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                        <path fill="#fff" fill-opacity="1"
+                            d="M0,224L18.5,192C36.9,160,74,96,111,64C147.7,32,185,32,222,58.7C258.5,85,295,139,332,154.7C369.2,171,406,149,443,122.7C480,96,517,64,554,53.3C590.8,43,628,53,665,64C701.5,75,738,85,775,112C812.3,139,849,181,886,192C923.1,203,960,181,997,165.3C1033.8,149,1071,139,1108,144C1144.6,149,1182,171,1218,192C1255.4,213,1292,235,1329,234.7C1366.2,235,1403,213,1422,202.7L1440,192L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z">
+                        </path>
+                    </svg>
+                </section>
+                
+                <script type="text/javascript">
+                    const lightbox = GLightbox({
+                        touchNavigation: true,
+                        loop: true,
+                        autoplayVideos: true,
+                        href: 'https://www.youtube.com/watch?v=SycDH3NSJUU',
+                        type: 'video',
+                        source: 'youtube',
+                        width: 900,
+                    });
+                </script>
+                </body>
+
 </html>
