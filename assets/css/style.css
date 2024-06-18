@@ -4485,8 +4485,8 @@ textarea.form-control-lg {
   --bs-accordion-border-width: var(--bs-border-width);
   --bs-accordion-border-radius: var(--bs-border-radius);
   --bs-accordion-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
-  --bs-accordion-btn-padding-x: 1.25rem;
-  --bs-accordion-btn-padding-y: 1rem;
+  --bs-accordion-btn-padding-x: 1.5rem;
+  --bs-accordion-btn-padding-y: 1.5rem;
   --bs-accordion-btn-color: var(--bs-body-color);
   --bs-accordion-btn-bg: var(--bs-accordion-bg);
   --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='rgb%28208, 45, 208%29' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z'/%3e%3c/svg%3e");
@@ -4495,8 +4495,8 @@ textarea.form-control-lg {
   --bs-accordion-btn-icon-transition: transform 0.2s ease-in-out;
   --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='rgb%28208, 45, 208%29' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1z'/%3e%3c/svg%3e");
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(14, 173, 162, 0.25);
-  --bs-accordion-body-padding-x: 1.25rem;
-  --bs-accordion-body-padding-y: 1rem;
+  --bs-accordion-body-padding-x: 1.5rem;
+  --bs-accordion-body-padding-y: 1.5rem;
   --bs-accordion-active-color: var(--bs-primary-text-emphasis);
   --bs-accordion-active-bg: var(--bs-primary-bg-subtle);
 }
@@ -11949,6 +11949,246 @@ textarea.form-control-lg {
     font-size: 1.5rem;
     display: inline-block;
   }
+}
+
+.heading-line::before {
+  content: "";
+  background-color: #0eada2;
+  display: block;
+  margin: 0 auto;
+  height: 0.1rem;
+  width: 10rem;
+}
+
+.heading-line::after {
+  content: "";
+  background-color: #0eada2;
+  display: block;
+  margin: 0 auto;
+  height: 0.1rem;
+  width: 2rem;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+
+.display-3 {
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: capitalize;
+}
+.display-3--title {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-family: "Bebas Neue", sans-serif;
+  background-color: linear-gradient(to right #0eada2, rgb(208, 45, 208));
+  display: inline-block;
+}
+@media (min-width: 992px) {
+  .display-3--title {
+    font-size: 2rem;
+  }
+}
+
+.border-right {
+  border-right: 0.1rem solid gray;
+  height: 100%;
+}
+
+.fontsize {
+  font-size: 1.5rem;
+}
+
+.footer {
+  padding-top: 1rem;
+  background-color: #151414;
+}
+
+.contact-box {
+  position: relative;
+}
+.contact-box__icon {
+  width: 2rem;
+  stroke: #0eada2;
+  padding-top: 0.5rem;
+}
+@media (min-width: 576px) {
+  .contact-box__icon {
+    width: 4rem;
+  }
+}
+.contact-box__info {
+  padding: 0.4rem;
+  font-weight: 600;
+}
+.contact-box__info--title {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+@media (min-width: 576px) {
+  .contact-box__info--title {
+    width: 1.4rem;
+  }
+}
+.contact-box__info--subtitle {
+  color: #6c757d;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+@media (min-width: 576px) {
+  .contact-box__info--subtitle {
+    width: 1rem;
+  }
+}
+
+.company-list {
+  display: block;
+  list-style-type: none;
+  position: relative;
+}
+.company-list li {
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+.company-list li a {
+  color: white;
+  text-decoration: none;
+}
+.company-list li a:hover {
+  color: #0eada2;
+}
+
+.footer-bottom {
+  background-color: black;
+}
+.footer-bottom__copyright {
+  color: #6c757d;
+  font-weight: 400;
+}
+.footer-bottom__copyright a {
+  color: #dee2e6;
+  text-decoration: none;
+}
+.footer-bottom__copyright a:hover {
+  color: #0eada2;
+  text-decoration: underline;
+}
+
+.get-started {
+  background-color: #e9ecef;
+  padding: 4rem 0;
+}
+
+.gradient {
+  background: linear-gradient(to right, rgba(14, 173, 162, 0.95), rgba(208, 45, 208, 0.95));
+}
+
+.cta-info {
+  padding: 3rem;
+  margin: 1rem 0;
+}
+.cta-info__list {
+  position: relative;
+  list-style-type: none;
+  display: block;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  margin-bottom: 0.7rem;
+}
+.cta-info__list li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\e4aa";
+  font-weight: 600;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.form {
+  padding: 3rem;
+}
+.form button a {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.testimonials {
+  position: relative;
+  padding: 0;
+  background: linear-gradient(to right, rgba(14, 173, 162, 0.95), rgba(208, 45, 208, 0.95));
+}
+.testimonials__card {
+  background-color: white;
+  padding: 2rem 1.25rem;
+  border-radius: 0.625rem;
+  height: auto;
+  text-align: center;
+}
+.testimonials__card i {
+  font-size: 1.5rem;
+  color: rgba(14, 173, 162, 0.7);
+}
+.testimonials__card .ratings i {
+  color: rgba(14, 173, 162, 0.7);
+  font-size: 1rem;
+}
+.testimonials__picture {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.testimonials__picture img {
+  border: 0.325rem solid rgba(14, 173, 162, 0.7);
+}
+.testimonials__name {
+  padding-top: 3.3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+}
+.testimonials__name h3 {
+  padding-top: 0.8rem;
+}
+.testimonials__name p {
+  padding-bottom: 2rem;
+  text-transform: capitalize;
+}
+
+.services {
+  position: relative;
+  padding: 1rem 0;
+}
+.services_content {
+  padding: 1rem;
+  margin-top: 5rem;
+}
+.services_content p {
+  font-size: 0.8rem;
+}
+@media (min-width: 992px) {
+  .services_content p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .services_content {
+    margin-top: 5rem;
+  }
+}
+.services_content .icon {
+  font-size: 1.5rem;
+  color: #0eada2;
+}
+@media (min-width: 992px) {
+  .services_content .icon {
+    font-size: 2.5rem;
+  }
+}
+.services_pic {
+  max-width: 100%;
 }
 
 .menu {

@@ -1,8 +1,11 @@
 $pink: rgb(208, 45, 208);
+$footer:#151414;
 $green: #0eada2;
 $primary: $green;
 $secondary: $pink;
 //Accordion overrides
+$accordion-padding-y:                     1.5rem ;
+$accordion-padding-x:                     1.5rem ;
 $accordion-icon-color: $secondary;
 $accordion-icon-active-color: $secondary;
 $accordion-icon-width: 1.3rem;

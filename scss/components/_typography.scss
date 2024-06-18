@@ -26,3 +26,45 @@
     }
   }
 }
+.heading-line::before{
+  content: "";
+  background-color: $primary;
+  display: block;
+  margin:0 auto ;
+  height: 0.1rem  ;
+  width: 10rem;
+}
+.heading-line::after{
+  content: "";
+  background-color: $primary;
+  display: block;
+  margin:0 auto ;
+  height: 0.1rem  ;
+  width: 2rem;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+.display-3{
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: capitalize;
+  &--title{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: "Bebas Neue", sans-serif;
+    background-color: linear-gradient(to right $primary, $secondary  ); 
+    display: inline-block;
+    @include media-breakpoint-up(lg){
+      font-size: 2rem;
+  }
+    
+  }
+}
+.border-right{
+  border-right: 0.1rem solid gray  ;
+  height: 100%;
+  
+}
+.fontsize{
+  font-size: 1.5rem;
+}
